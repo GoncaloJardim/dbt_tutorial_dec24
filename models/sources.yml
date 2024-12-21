@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: dbt_goncalojardim
+    config:
+      enabled: true
+
+    tables:
+      - name: superstore-table
+        description: Table that contains all the superstore data.
+      - name: superstore-orders
+        description: Table that contains all orders that were returned.
+
+  - name: jaffer
+    config:
+      enabled: true
+
+    tables:
+      - name: customers
